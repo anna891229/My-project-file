@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_3"
+    tools:context=".Homepage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/analyzebtn"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="150dp"
+            android:background="@color/button_color"
+            android:text="未來房價預測"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/yieldbtn"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/button_color"
+            android:text="殖利率"
+            android:textSize="34sp" />
+        <Button
+            android:id="@+id/agebtn"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/button_color"
+            android:text="房價租金比"
+            android:textSize="34sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
