@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_3"
+    tools:context=".RE_Homepage">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Distbutton"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="150dp"
+            android:background="@color/button_color"
+            android:text="區域比較"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/Sepecificbtn"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/button_color"
+            android:text="指定範圍"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/rankbtn"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/button_color"
+            android:text="總排行"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/ToHome"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="首頁"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/ToDist"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="2"
+            android:background="@color/change_color1"
+            android:gravity="center"
+            android:text="不動產"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/ToRent"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|right"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="租屋"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
